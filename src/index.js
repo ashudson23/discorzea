@@ -1,3 +1,4 @@
+import http from 'http';
 import { config as setupEnv } from 'dotenv-flow';
 import Discord from 'discord.js';
 
@@ -16,3 +17,10 @@ bot.on('message', msg => {
     msg.channel.send('pong');
   }
 });
+
+const date = new Date();
+http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write(`Running since ${date}`);
+  res.end();
+}).listen(8080);
