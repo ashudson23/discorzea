@@ -1,0 +1,13 @@
+{
+	"logged": "Logged in as {{tag}}",
+	"oops": "Something went wrong!",
+	"/beep": {
+		"name": "/beep",
+		"description": "Mayhap you will stumble upon a boop"
+	},
+	"/boop": {
+		"name": "/boop",
+		"description": "Prithee, may-another-hap it will beep"
+	},
+	"welcome": "Welcome"
+}

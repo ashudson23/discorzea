@@ -1,0 +1,13 @@
+{
+	"logged": "Tu es connecté en tant que {{tag}}",
+	"oops": "Oups, c'est un bug",
+	"/beep": {
+		"name": "/beep",
+		"description": "Par hasard, tu aurais pu trouver un boop"
+	},
+	"/boop": {
+		"name": "/boop",
+		"description": "Mais non, y a-t-il un beep ?!"
+	},
+	"welcome": "Bienvenue"
+}

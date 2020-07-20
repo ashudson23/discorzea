@@ -1,18 +1,16 @@
-const beep = {
-  name: '/beep',
-  description: 'beep!',
-  render(msg, args) {
-    msg.reply('boop');
-  },
-};
+const on = (command, render) => ({
+  name: t(`${command}.name`),
+  description: t(`${command}.description`),
+  render,
+});
 
-const boop = {
-  name: '/boop',
-  description: 'boop!',
-  render(msg, args) {
-    msg.reply('beep');
-  },
-};
+const boop = on('/beep', (msg, args) => {
+  msg.reply('boop');
+});
+
+const beep = on('/boop', (msg, args) => {
+  msg.reply('beep');
+});
 
 export default [
   beep,

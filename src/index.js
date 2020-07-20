@@ -1,11 +1,22 @@
 import './setup';
-import bot from './discord'
+import bot from './discord';
+import server from './server'
+
+const getClient = async () => {
+  const token = process.env.TOKEN;
+  // PSEUDO: get client from db
+  return {
+    token,
+    locale: "fr",
+  };
+}
 
 (async () => {
-  // TODO: prep storage medium
+  const client = await getClient();
+  await i18n.changeLanguage(client.locale);
 
   bot.on('ready', () => {
-    console.info(`Logged in as ${bot.user.tag}!`);
+    console.info(t("logged", bot.user));
   });
 
   bot.on('message', msg => {
@@ -19,9 +30,10 @@ import bot from './discord'
     try {
       bot.commands.get(command).render(msg, args);
     } catch (error) {
-      msg.reply('Something went wrong!');
+      msg.reply(t("oops"));
     }
   });
 
-  bot.login(process.env.TOKEN);
+  bot.login(client.token);
+  server();
 })();

@@ -1,6 +1,6 @@
 {
   "name": "discorzea",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Discord bot for playing around",
   "author": "ashudson23",
   "license": "MIT",
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "discord.js": "^12.2.0",
-    "dotenv-flow": "^3.2.0"
+    "dotenv-flow": "^3.2.0",
+    "i18next": "^19.6.2",
+    "i18next-fs-backend": "^1.0.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
