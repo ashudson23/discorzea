@@ -34,7 +34,14 @@ npm run serve
 
 ### Available commands
 
+#### English
 | Command | Description |
 | :-- | :-- |
 | /beep | Mayhap you will stumble upon a boop |
 | /boop | Prithee, may-another-hap it will beep |
+
+#### Francais
+| Commandes | Description |
+| :-- | :-- |
+| /beep | Par hasard, tu aurais pu trouver un boop |
+| /boop | Mais non, y a-t-il un beep ?! |
