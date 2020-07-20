@@ -1,0 +1,22 @@
+{
+  "name": "discorzea",
+  "version": "0.0.1",
+  "description": "Discord bot for playing around",
+  "author": "ashudson23",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node index.js",
+    "serve": "node lib/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv-flow": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5"
+  }
+}
