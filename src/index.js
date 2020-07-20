@@ -1,26 +1,27 @@
-import http from 'http';
-import { config as setupEnv } from 'dotenv-flow';
-import Discord from 'discord.js';
+import './setup';
+import bot from './discord'
 
-setupEnv();
+(async () => {
+  // TODO: prep storage medium
 
-const bot = new Discord.Client();
-bot.login(process.env.TOKEN);
+  bot.on('ready', () => {
+    console.info(`Logged in as ${bot.user.tag}!`);
+  });
 
-bot.on('ready', () => {
-  console.info(`Logged in as ${bot.user.tag}!`);
-});
+  bot.on('message', msg => {
+    const args = msg.content.split(/ +/);
+    const command = args.shift().toLowerCase();
+  
+    if (!bot.commands.has(command)) {
+      return;
+    }
+  
+    try {
+      bot.commands.get(command).render(msg, args);
+    } catch (error) {
+      msg.reply('Something went wrong!');
+    }
+  });
 
-bot.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong');
-    msg.channel.send('pong');
-  }
-});
-
-const date = new Date();
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write(`Running since ${date}`);
-  res.end();
-}).listen(8080);
+  bot.login(process.env.TOKEN);
+})();
