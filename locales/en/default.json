@@ -1,6 +1,7 @@
 {
 	"logged": "Logged in as {{tag}}",
 	"oops": "Something went wrong!",
+	"sharded": "Shard with index {{id}} calling",
 	"/beep": {
 		"name": "/beep",
 		"description": "Mayhap you will stumble upon a boop"
@@ -8,6 +9,10 @@
 	"/boop": {
 		"name": "/boop",
 		"description": "Prithee, may-another-hap it will beep"
+	},
+	"/sing": {
+		"name": "/sing",
+		"description": "Imma sing a little song for you!"
 	},
 	"welcome": "Welcome"
 }

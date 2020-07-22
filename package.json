@@ -1,15 +1,16 @@
 {
   "name": "discorzea",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Discord bot for playing around",
   "author": "ashudson23",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rm -rf lib && babel src -d lib",
     "start": "node index.js",
-    "serve": "node lib/index.js"
+    "serve": "cross-env NODE_ENV=production node lib/index.js"
   },
   "dependencies": {
+    "cross-env": "^7.0.2",
     "discord.js": "^12.2.0",
     "dotenv-flow": "^3.2.0",
     "i18next": "^19.6.2",
@@ -20,6 +21,7 @@
     "@babel/core": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "@babel/register": "^7.10.5"
+    "@babel/register": "^7.10.5",
+    "babel-plugin-wildcard": "^6.0.0"
   }
 }
