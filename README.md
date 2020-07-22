@@ -25,12 +25,19 @@ npm i
 npm run start
 ```
 
-#### NB: running app in production 
+#### Run app in production 
 ```sh
 npm i
 npm run build
 npm run serve
 ```
+
+##### Sharding in production
+By default the application runs a single shard in production, for more shards edit `.env`.
+```sh
+SHARD_COUNT=1
+```
+Note: value must be an integer or `auto`.  For more information on sharding read [the Discord.js guide](https://discordjs.guide/sharding/).
 
 ### Available commands
 
@@ -39,9 +46,11 @@ npm run serve
 | :-- | :-- |
 | /beep | Mayhap you will stumble upon a boop |
 | /boop | Prithee, may-another-hap it will beep |
+| /sing | Imma sing a little song for you! |
 
 #### Francais
 | Commandes | Description |
 | :-- | :-- |
 | /beep | Par hasard, tu aurais pu trouver un boop |
 | /boop | Mais non, y a-t-il un beep ?! |
+| /chante | si tu as besoin d'une chanson ! |
