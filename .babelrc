@@ -3,6 +3,12 @@
     "@babel/preset-env"
   ],
   "plugins": [
-    "@babel/transform-runtime"
+    "@babel/transform-runtime",
+    [
+      "babel-plugin-wildcard",
+      {
+        "noModifyCase": true
+      }
+    ]
   ]
 }

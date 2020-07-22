@@ -1,6 +1,7 @@
 {
 	"logged": "Tu es connecté en tant que {{tag}}",
 	"oops": "Oups, c'est un bug",
+	"sharded": "Évoquant l'index du shard {{id}}",
 	"/beep": {
 		"name": "/beep",
 		"description": "Par hasard, tu aurais pu trouver un boop"
@@ -8,6 +9,10 @@
 	"/boop": {
 		"name": "/boop",
 		"description": "Mais non, y a-t-il un beep ?!"
+	},
+	"/sing": {
+		"name": "/chante",
+		"description": "si tu as besoin d'une chanson !"
 	},
 	"welcome": "Bienvenue"
 }
