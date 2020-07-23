@@ -18,6 +18,10 @@ Note: you could also create `.env.local` instead (as a local envs override)
 ```
 TOKEN=place_actual_token_here
 ```
+##### To use some commands you'll need key from [xivapi.com](https://xivapi.com/account)
+```
+XIVAPI_KEY=place_actual_token_here
+```
 
 #### Run app in development
 ```sh
