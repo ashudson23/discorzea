@@ -13,7 +13,8 @@ const init = () => new Promise(resolve => {
       ns: ['default'],
       backend: {
         loadPath: join(__dirname, '../../locales/{{lng}}/{{ns}}.json'),
-      }
+      },
+      returnObjects: true,
     }).then(t => resolve(t));
 })
 

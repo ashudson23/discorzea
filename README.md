@@ -53,4 +53,4 @@ Note: value must be an integer or `auto`.  For more information on sharding read
 | :-- | :-- |
 | /beep | Par hasard, tu aurais pu trouver un boop |
 | /boop | Mais non, y a-t-il un beep ?! |
-| /chante | si tu as besoin d'une chanson ! |
+| /chante | Si tu as besoin d'une chanson ! |

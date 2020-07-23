@@ -1,4 +1,6 @@
 *.log
 *.local
+*/*/.env
+.vscode/
 node_modules/
 lib/
