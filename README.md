@@ -43,15 +43,15 @@ Note: value must be an integer or `auto`.  For more information on sharding read
 
 #### English
 | Command | Aliases | Description | Accepted Formats |
-| -- | -- | -- | -- |
+| :-- | :-- | :-- | :-- |
 | /beep | | Mayhap you will stumble upon a boop | |
 | /boop | | Prithee, may-another-hap it will beep | |
 | /sing | | Imma sing a little song for you! | |
 | /facetarget | /ft | Get character information for FFXIV character | /ft [firstname] <br /> /ft [firstname] of [server] <br /> /ft [firstname] [lastname] <br /> /ft [firstname] [lastname] [server] <br /> /ft [firstname] [lastname] of [server] |
 
-#### Francais
+#### Français
 | Commandes | Alias | Description | Formats Acceptés |
-| -- | -- | -- | -- |
+| :-- | :-- | :-- | :-- |
 | /beep | | Par hasard, tu aurais pu trouver un boop | |
 | /boop | | Mais non, y a-t-il un beep ?! | |
 | /chante | | Si tu as besoin d'une chanson ! | |
