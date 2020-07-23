@@ -42,15 +42,17 @@ Note: value must be an integer or `auto`.  For more information on sharding read
 ### Available commands
 
 #### English
-| Command | Description |
-| :-- | :-- |
-| /beep | Mayhap you will stumble upon a boop |
-| /boop | Prithee, may-another-hap it will beep |
-| /sing | Imma sing a little song for you! |
+| Command | Aliases | Description | Accepted Formats |
+| -- | -- | -- | -- |
+| /beep | | Mayhap you will stumble upon a boop | |
+| /boop | | Prithee, may-another-hap it will beep | |
+| /sing | | Imma sing a little song for you! | |
+| /facetarget | /ft | Get character information for FFXIV character | /ft [firstname] <br /> /ft [firstname] of [server] <br /> /ft [firstname] [lastname] <br /> /ft [firstname] [lastname] [server] <br /> /ft [firstname] [lastname] of [server] |
 
 #### Francais
-| Commandes | Description |
-| :-- | :-- |
-| /beep | Par hasard, tu aurais pu trouver un boop |
-| /boop | Mais non, y a-t-il un beep ?! |
-| /chante | Si tu as besoin d'une chanson ! |
+| Commandes | Alias | Description | Formats Acceptés |
+| -- | -- | -- | -- |
+| /beep | | Par hasard, tu aurais pu trouver un boop | |
+| /boop | | Mais non, y a-t-il un beep ?! | |
+| /chante | | Si tu as besoin d'une chanson ! | |
+| /faireface  | /ft <br /> /facetarget | Ton personnage se tourne vers la cible ton bae | /ft [prenom] <br /> /ft [prenom] de [server] <br /> /ft [prenom] [nom] <br /> /ft [prenom] [nom] [server] <br /> /ft [prenom] [nom] de [server] |
