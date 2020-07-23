@@ -5,6 +5,9 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
 
+const PREFIX = "/";
+const getAliases = (value = "") => value.split(" ").filter(x => x);
+
 client.setup = (token) => {
   client.login(token);
 
@@ -13,11 +16,13 @@ client.setup = (token) => {
   });
 
   require('./commands/index.js').default
-    .forEach(([keyword, command]) => {
-      const name = t(`/${keyword}.name`);
-      const description = t(`/${keyword}.description`);
+    .forEach(([key, cmd]) => {
+      const info = t(`command.${key}`);
+      const { name, aliases } = info;
 
-      client.commands.set(name, { ...command, description });
+      [name, ...getAliases(aliases)].forEach(keyword => {
+        client.commands.set(`${PREFIX}${keyword}`, { ...info, ...cmd })
+      });
     }
   );
 };

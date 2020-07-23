@@ -2,17 +2,25 @@
 	"logged": "Logged in as {{tag}}",
 	"oops": "Something went wrong!",
 	"sharded": "Shard with index {{id}} calling",
-	"/beep": {
-		"name": "/beep",
-		"description": "Mayhap you will stumble upon a boop"
-	},
-	"/boop": {
-		"name": "/boop",
-		"description": "Prithee, may-another-hap it will beep"
-	},
-	"/sing": {
-		"name": "/sing",
-		"description": "Imma sing a little song for you!"
+	"command": {
+		"beep": {
+			"name": "beep",
+			"description": "Mayhap you will stumble upon a boop"
+		},
+		"boop": {
+			"name": "boop",
+			"description": "Prithee, may-another-hap it will beep"
+		},
+		"sing": {
+			"name": "sing",
+			"description": "Imma sing a little song for you!"
+		},
+		"facetarget": {
+			"aliases": "ft",
+			"name": "facetarget",
+			"match": "(?<firstname>\\w+)(( (?<surname>(?!of)\\w+))?(( of)? (?<server>\\w+))?)?",
+			"description": "Get character information for FFXIV character"
+		}
 	},
 	"welcome": "Welcome"
 }
